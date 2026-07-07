@@ -1,0 +1,11 @@
+﻿<Solution>
+  <Project Path="JsonDictionaryEditor.Android/JsonDictionaryEditor.Android.csproj">
+    <Deploy />
+  </Project>
+  <Project Path="JsonDictionaryEditor.Browser/JsonDictionaryEditor.Browser.csproj" />
+  <Project Path="JsonDictionaryEditor.Desktop/JsonDictionaryEditor.Desktop.csproj" />
+  <Project Path="JsonDictionaryEditor.iOS/JsonDictionaryEditor.iOS.csproj">
+    <Deploy />
+  </Project>
+  <Project Path="JsonDictionaryEditor/JsonDictionaryEditor.csproj" />
+</Solution>

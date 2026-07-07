@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:JsonDictionaryEditor.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="JsonDictionaryEditor.Views.MainView">
+    <Grid>
+
+        <Grid Name="MainControlRoot">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Menu>
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New" Name="NewMenuItem" Click="NewMenuItem_Click"/>
+                    <MenuItem Header="_Open" Name="OpenMenuItem" Click="OpenMenuItem_Click"/>
+                    <MenuItem Header="_Save" Name="SaveBtn" Click="SaveBtn_Click"/>
+                    <MenuItem Header="Save _As" Name="SaveAsBtn" Click="SaveAsBtn_Click"/>
+                    <Separator/>
+                    <MenuItem Header="E_xit" Name="ExitMenuItem" Click="ExitMenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+            <Grid Grid.Row="1">
+                <ScrollViewer>
+                    <StackPanel Name="EditorPanel" Margin="10,10,10,75"></StackPanel>
+                </ScrollViewer>
+                <Button HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                        Width="50" Height="50" Margin="15" CornerRadius="25" FontSize="30" Padding="0"
+                        Name="AddNewPairButton" Click="AddNewPairButton_Click">+</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
