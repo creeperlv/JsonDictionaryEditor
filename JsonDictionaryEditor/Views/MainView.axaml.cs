@@ -95,6 +95,7 @@ public partial class MainView : UserControl
             if (f is null) return;
             var p = f.TryGetLocalPath();
             this.current_file_path = p;
+            EditorPanel.Children.Clear();
             if (current_file_path is not null)
             {
                 Dictionary<string, string>? data = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(current_file_path));

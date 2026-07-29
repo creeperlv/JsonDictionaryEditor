@@ -15,10 +15,10 @@
       <ColumnDefinition/>
       <ColumnDefinition Width="Auto"/>
     </Grid.ColumnDefinitions>
-    <TextBlock>
+    <TextBlock VerticalAlignment="Center" Padding="5,0">
       Key
     </TextBlock>
-    <TextBlock Grid.Row="1">
+    <TextBlock Grid.Row="1" VerticalAlignment="Center" Padding="5,0">
       Value
     </TextBlock>
     <TextBox Name="KeyBox" Grid.Column="1"/>
